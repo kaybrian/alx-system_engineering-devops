@@ -1,0 +1,10 @@
+#!/bin/bash
+#   localhost from 127.0.0.1 to 127.0.0.2
+#   facebook.com from 157.240.11.35 to 8.8.8.8
+#   Changing all the domains on a linx machine which is on a docker image 
+
+cp /etc/hosts ~/hosts.new
+echo "127.0.0.2		localhost" > ~/hosts.new
+echo "8.8.8.8		facebook.com" >> ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
+
