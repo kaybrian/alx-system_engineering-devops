@@ -1,5 +1,5 @@
-# Install flask
 package { 'flask':
+  command   => 'pip3 install flask flask_restful',
   ensure   => '2.1.0',
-  provider => 'pip3'
+  provider => 'flask'
 }
