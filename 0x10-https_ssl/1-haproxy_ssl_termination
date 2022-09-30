@@ -10,7 +10,7 @@ defaults
 	timeout client  30s
 	timeout server  30s
 
-frontend kaybrian-frontend
+frontend kaybrian-tech-frontend
 	bind *:80
 	bind *:443 ssl crt /etc/haproxy/certs/kaybrian.tech.pem
 	http-request redirect scheme https unless { ssl_fc }
